@@ -1,0 +1,17 @@
+﻿l_english:
+ ###
+ BIM_ruler:0 "Big MT"
+ BIM_ruler_DEF:0 "Big MT"
+ BIM_ruler_ADJ:0 "Big MT"
+ BIM_people:0 "Big MT"
+ BIM_people_DEF:0 "Big MT"
+ BIM_people_ADJ:0 "Big MT"
+ BIM_intellectuals:0 "Big MT"
+ BIM_intellectuals_DEF:0 "Big MT"
+ BIM_intellectuals_ADJ:0 "Big MT"
+ BIM_elites:0 "Big MT"
+ BIM_elites_DEF:0 "Big MT"
+ BIM_elites_ADJ:0 "Big MT"
+ ABILITY_SUICIDE_ATTACK:0 "Suicide Attack"
+ ABILITY_SUICIDE_ATTACK_DESC:0 "Lobotomites with explosive Collars are send into the enemy lines"
+ BIM_ruler_party:0 "Cult of Mobius" 

@@ -1,0 +1,57 @@
+technologies = {
+	trauma_suits = {
+		research_cost = 1.0
+		start_year = 2275
+		
+		enable_subunits = {
+            trauma_suit
+         
+        }
+		
+		enable_equipments = {
+			trauma_suit_equipment_1
+                       
+		}
+		
+        # Applied via history only
+        allow = {
+			always = no
+		}
+
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+robo_scorpions = {
+		research_cost = 1.0
+		start_year = 2275
+		
+		enable_subunits = {
+            robo_scorpion
+         
+        }
+		
+		enable_equipments = {
+			robo_scorpion_equipment_1
+                       
+		}
+		
+        # Applied via history only
+        allow = {
+			always = no
+		}
+
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

@@ -1,0 +1,56 @@
+﻿l_english:
+################################## EVENTS ##############################################
+nf_bigmt.1.t:0 "Mobius Uprising"
+nf_bigmt.1.d:0 "Lately Mobius has become disillusioned with the methods of the other think tanks. He has grown tired of the endless and horrible experimentation, and was deeply afraid of the damage the amoral and psychosis-ridden think tanks would wreak upon the fragile, post-apocalyptic world in the name of science. After a dispute with Klein Mobius has risen against the other Think Tanks"
+nf_bigmt.1.a:0 "The Uprising Fails"
+nf_bigmt.1.b:0 "Mobius Succeeds"
+
+nf_bigmt.2.t:0 "Corruption"
+nf_bigmt.2.d:0 "As the years pass, the Think Tanks corrupt more and more in their synthetic bodies. Their Experiments becoming more and more obscure and grotesque."
+nf_bigmt.2.a:0 "Nothing happens."
+nf_bigmt.2.b:0 "The Think Tanks corrupt."
+
+nf_bigmt.3.t:0 "Corruption"
+nf_bigmt.3.d:0 "As the years pass, Mobius synthetic body malfunctioning more and more. His good Intentions seem to dwindle as he begins to see himself more and more as a God in the Wasteland"
+nf_bigmt.3.a:0 "Nothing happens."
+nf_bigmt.3.b:0 "Mobius corrupts."
+
+nf_bigmt.4.t:0 "BigMT awakes"
+nf_bigmt.4.d:0 "After decades of Isolation, the BigMT has decided to step into the outside World again. As the Decades have passed a lot of our Equipment and Data has rusted away, still we should be able to recover some."
+nf_bigmt.4.a:0 "Recover Data."
+nf_bigmt.4.b:0 "Reactivate some Automatrons."
+nf_bigmt.4.c:0 "Recover some Auto-Docs."
+nf_bigmt.4.e:0 "Reactivate old production Machinery"
+
+nf_bigmt.5.t:0 "Sending out Signals"
+nf_bigmt.5.d:0 "It's time to reopen contact with the rest of the Wasteland and call for more people to visit the BigMT."
+
+nf_bigmt.6.t:0 "Mysterious Broadcast"
+nf_bigmt.6.d:0 "A strange Broadcast can be heard on the Radio. More and more people seem to vanish lately."
+
+nf_bigmt.8.t:0 "Elyjahs Visit"
+nf_bigmt.8.d:0 "A man from the Wasteland has visited us today. He says that he's from the Brotherhood of Steel and looking for new Technology."
+nf_bigmt.8.a:0 "Maybe we can strike a deal."
+
+nf_bigmt.9.t:0 "Deal with the BigMT"
+nf_bigmt.9.d:0 "We've been contacted by the BigMT today, they're offering us to share some of their Technology if we share ours. "
+nf_bigmt.9.a:0 "Agree."
+nf_bigmt.9.a:0 "Friendly decline."
+
+nf_bigmt.10.t:0 "Weapon Reconstruction"
+nf_bigmt.10.d:0 "Now that BigMT has awoken it's time to resurrect some of our older Weapon Technology. Due to the Databases having failed over the decades we can only scavange one Weapon System."
+nf_bigmt.10.a:0 "Focus on Laser Weaponry "
+nf_bigmt.10.b:0 "Focus on Melee Weaponry."
+
+nf_bigmt.11.t:0 "Experiment #457440"
+nf_bigmt.11.d:0 "We've achieved a breakthrough with our Mind reprogramming Technology today, allowing to increase performance of our Lobotomites. Problem is that only one Upgrade can be chosen."
+nf_bigmt.11.a:0 "Option A: Make them more aggresive. "
+nf_bigmt.11.b:0 "Option B: Make them more defensive."
+
+nf_bigmt.12.t:0 "Clash at Little Yangtze"
+nf_bigmt.12.d:0 "A firefight has broken out today between Elyjah and another Visitor called Christine Royce. Royce was wounded after the fight and we were able to recover her Body in an Auto-Doc. Now Ulysses tries to break into the Facility and steal her body."
+nf_bigmt.12.a:0 "Our Security stops him."
+nf_bigmt.12.b:0 "Ulysses rescues Royce."
+
+
+

@@ -1,0 +1,99 @@
+﻿capital = 246
+oob = "BIM_2265"
+set_stability = 0.40 
+set_war_support = 0.40
+	set_technology = {
+		# baseline techs
+		standard_weaponry_tech = 1
+	basic_ballistic_weaponry = 1
+		tribal_civilization = 1
+		settled_civilization = 1
+                scientific_civilization = 1
+                trauma_suits = 1
+               
+		
+		vaultmed = 1
+	       basic_forges = 1
+	      oral_instruction = 1
+	 traditional_instruction = 1
+	 woodworking = 1
+	 clay_working = 1
+	 logging_camps = 1
+	 quarry_picks = 1
+	 tribal_huts = 1
+	 adobe_housing = 1
+	 basic_well_pump = 1
+	 basic_generator = 1
+	 basic_research_laboratory = 1
+		explosive_tech = 1
+		support_weaponry = 1
+		
+		
+		
+		#naval
+		naval_invasion_tech = 1
+	}
+
+set_politics = {
+    parties = {
+        people = { popularity = 10 }
+        elites = { popularity = 10 }
+        intellectuals = { popularity = 80 }
+        ruler = { popularity = 0}
+    }
+    ruling_party = intellectuals
+    elections_allowed = yes
+}
+
+add_ideas = { 
+lobo_army
+old_dreams
+}
+set_research_slots = 4
+
+create_country_leader  = {
+    name = "Think Tanks"
+	id=135
+    desc = ""
+    picture = "gfx/leaders/BIM/tt.dds"
+    expire = "3000.1.1"
+    ideology = ideocracy
+    
+    traits = {
+    }
+}
+create_country_leader  = {
+    name = "Doktor Mobius"
+	id=136
+    desc = ""
+    picture = "gfx/leaders/BIM/dm.dds"
+    expire = "3000.1.1"
+    ideology = commune
+    
+    traits = {
+    }
+}
+create_country_leader  = {
+    name = "Corrupt Think Tanks"
+	id=137
+    desc = ""
+    picture = "gfx/leaders/BIM/tt.dds"
+    expire = "3000.1.1"
+    ideology = militarist_technocracy
+    
+    traits = {
+    }
+}
+create_country_leader  = {
+    name = "Mobius"
+	id=138
+    desc = ""
+    picture = "gfx/leaders/BIM/dm.dds"
+    expire = "3000.1.1"
+    ideology = benevolent_dictatorship
+    
+    traits = {
+    }
+
+}
+

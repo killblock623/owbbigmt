@@ -1,0 +1,1083 @@
+focus_tree = {
+ id = bim_focus
+
+   country = {
+   factor = 0
+modifier = {
+           add = 20
+		  tag=BIM
+		  }   
+      }
+ default = no
+ focus = {
+		id = bim_incident
+		icon = GFX_goal_generic_demand_territory
+		cost = 1.00
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = bim_subject_test
+		}
+
+		completion_reward = {
+		
+			country_event = {
+							id = nf_bigmt.1
+						}
+		}
+    }
+	
+focus = { 
+		id = bim_subject_test
+		icon = GFX_goal_generic_demand_territory
+		cost = 1.00
+
+		x = 12
+		y = 1
+
+		completion_reward = {
+			country_event = {
+							id = nf_bigmt.4
+						}
+		}
+	}
+
+focus = { 
+		id = bim_old_world_blues
+		icon = GFX_goal_generic_demand_territory
+		cost = 1.00
+		prerequisite = {
+			focus = bim_incident
+		}
+		x = 12
+		y = 3
+
+		completion_reward = {
+	     country_event = {
+							id = nf_bigmt.10
+						}
+		}
+	}
+# War Goal Tree
+focus = { 
+		id = bim_testing
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_old_world_blues
+		}
+		x = 4
+		y = 5
+
+		completion_reward = {
+				army_experience = 25
+		}
+	}
+# War against the Tar Walkers	
+focus = { 
+		id = bim_tar_annex
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_testing
+		}
+		x = 4
+		y = 6
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = TAR }
+		}
+	}
+focus = { 
+		id = bim_tar_integrate
+		icon = GFX_goal_generic_secret_weapon
+		cost = 8.6
+		prerequisite = {
+			focus = bim_tar_annex
+		}
+		available = {
+			NOT ={country_exists=TAR}
+			}
+		x = 4
+		y = 7
+
+		completion_reward = {
+			add_state_core = 67
+			add_state_core = 499
+			add_state_core = 542
+			add_state_core = 76
+			add_state_core = 470
+			add_state_core = 26
+			add_state_core = 621
+			add_state_core = 10
+			add_state_core = 391
+			add_state_core = 138
+		
+		}
+	}
+	focus = { 
+		id = bim_crazy_annex
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_tar_integrate
+		}
+		available = {
+			NOT ={country_exists=CRZ}
+			}
+		x = 2
+		y = 8
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = CRZ }
+		}
+	}
+focus = { 
+		id = bim_crazy_integrate
+		icon = GFX_goal_generic_secret_weapon
+		cost = 8.6
+		prerequisite = {
+			focus = bim_crazy_annex
+		}
+		available = {
+			NOT ={country_exists=CRZ}
+			}
+		x = 2
+		y = 9
+
+		completion_reward = {
+			add_state_core = 197
+			add_state_core = 364
+			add_state_core = 497
+			add_state_core = 279
+			add_state_core = 133
+		
+		}
+	}
+focus = { 
+		id = bim_delta_annex
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		available = {
+			NOT ={country_exists=TAR}
+			}
+		prerequisite = {
+			focus = bim_tar_integrate
+		}
+		x = 6
+		y = 8
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = DEL }
+		}
+	}
+focus = { 
+		id = bim_delta_integrate
+		icon = GFX_goal_generic_secret_weapon
+		cost = 8.6
+		prerequisite = {
+			focus = bim_delta_annex
+		}
+		available = {
+			NOT ={country_exists=DEL}
+			}
+		x = 6
+		y = 9
+
+		completion_reward = {
+			add_state_core = 496
+			add_state_core = 306
+			add_state_core = 547
+			add_state_core = 257
+		}
+	}	
+###
+# Political Tree
+focus = { 
+		id = bim_the_bigmt
+		icon=GFX_goal_generic_scientific_exchange
+		cost = 8.6
+		prerequisite = {
+			focus = bim_old_world_blues
+		}
+		x = 12
+		y = 4
+
+		completion_reward = {
+			country_event = {
+							id = nf_bigmt.11
+						}
+		}
+	}
+	#Currupt Mobius
+focus = { 
+		id = bim_mobius_corrupt
+		icon=GFX_goal_support_fascism
+		cost = 8.6
+		mutually_exclusive = { 
+		focus = bim_think_tanks
+		focus = bim_mobius
+		focus = bim_think_tanks_corrupt
+		}
+		available = {
+					has_country_leader = {
+							id = 138
+							ruling_only = yes
+							name = "Mobius"
+						}
+				}
+		prerequisite = {
+			focus = bim_the_bigmt
+
+		}
+		x = 9
+		y = 5
+
+		completion_reward = {
+			add_ideas = god_of_machines
+		}
+	}
+focus = { 
+		id = bim_old_world_god
+		icon=GFX_goal_bos_generic_industrial
+		cost = 8.6
+		prerequisite = {
+			focus = bim_mobius_corrupt
+		}
+		
+		x = 9
+		y = 6
+
+		completion_reward = {
+			add_ideas = old_world_god
+		}
+	}
+focus = { 
+		id = bim_machines_of_old
+		icon=GFX_goal_generic_CAS
+		cost = 8.6
+		prerequisite = {
+			focus = bim_old_world_god
+		}
+		
+		x = 9
+		y = 7
+
+		completion_reward = {
+			add_ideas = bim_justification
+				246={
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}}
+				
+		
+		}
+	}
+focus = { 
+		id = bim_cult_of_mobius
+		icon=GFX_goal_demand_sudetenland
+		cost = 8.6
+		prerequisite = {
+			focus = bim_machines_of_old
+		}
+		
+		x = 9
+		y = 8
+
+		completion_reward = {
+			add_ideas = cult_of_mobius
+		}
+	}	
+#Mobius is okay	
+focus = { 
+		id = bim_mobius
+		icon=GFX_goal_support_democracy
+		cost = 8.6
+		mutually_exclusive = { 
+		focus = bim_think_tanks
+		focus = bim_mobius_corrupt
+		focus = bim_think_tanks_corrupt
+		}
+		available = {
+					has_country_leader = {
+							id = 136
+							ruling_only = yes
+							name = "Doktor Mobius"
+						}
+				}
+		prerequisite = {
+			focus = bim_the_bigmt
+		}
+		x = 11
+		y = 5
+
+		completion_reward = {
+			add_ideas = people_institute
+		}
+	}
+focus = { 
+		id = bim_heal_the_lobo
+		icon=GFX_focus_generic_little_entente
+		cost = 8.6
+		prerequisite = {
+			focus = bim_mobius
+		}
+		
+		x = 11
+		y = 6
+
+		completion_reward = {
+			remove_ideas=lobo_army
+			add_ideas = recovered_army
+		}
+	}
+focus = { 
+		id = bim_improved_scorpions
+		icon=GFX_goal_generic_data_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_heal_the_lobo
+		}
+		
+		x = 11
+		y = 7
+
+		completion_reward = {
+			add_ideas = bim_good_suits
+				246={
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}}
+	}
+	}
+focus = { 
+		id = bim_utopia
+		icon=GFX_goal_generic_propaganda
+		cost = 8.6
+		prerequisite = {
+			focus = bim_improved_scorpions
+		}
+		
+		x = 11
+		y = 8
+
+		completion_reward = {
+			add_ideas = bim_utopia
+		}
+	}	
+#Corrupt think tanks	
+focus = { 
+		id = bim_think_tanks_corrupt
+		icon = GFX_focus_rom_parties_end
+		cost = 8.6
+		mutually_exclusive = { 
+		focus = bim_think_tanks
+		focus = bim_mobius_corrupt
+		focus = bim_mobius
+		}
+		available = {
+					has_country_leader = {
+							id = 137
+							ruling_only = yes
+							name = "Corrupt Think Tanks"
+						}
+				}
+		prerequisite = {
+			focus =bim_the_bigmt
+			
+		}
+		x = 13
+		y = 5
+
+		completion_reward = {
+			add_ideas = testing_institute
+		}
+	}
+focus = { 
+		id = bim_world_testing
+		icon=GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_think_tanks_corrupt
+		}
+		
+		x = 13
+		y = 6
+
+		completion_reward = {
+			add_ideas = bim_cheap_suits
+			
+		}
+	}
+	
+focus = { 
+		id = bim_deal_with_mobius
+		icon=GFX_goal_tripartite_pact
+		cost = 8.6
+		prerequisite = {
+			focus = bim_world_testing
+		}
+		
+		x = 13
+		y = 7
+
+		completion_reward = {
+		246={
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}}
+			add_ideas=bim_deal
+			
+		}
+	}
+focus = { 
+		id = bim_wasteland_of_subjects
+		icon=GFX_goal_legion_slaves
+		cost = 8.6
+		prerequisite = {
+			focus = bim_deal_with_mobius
+		}
+		
+		x = 13
+		y = 8
+
+		completion_reward = {
+			add_ideas = wasteland_of_subjects
+		}
+	}
+#think tanks are okay	
+ focus = { 
+		id = bim_think_tanks
+		icon=GFX_goal_generic_dangerous_deal
+		cost = 8.6
+		mutually_exclusive = { 
+		focus =bim_mobius_corrupt
+		focus =bim_mobius
+		focus =bim_think_tanks_corrupt
+		}
+		available = {
+					has_country_leader = {
+							id = 135
+							ruling_only = yes
+							name = "Think Tanks"
+						}
+				}
+		prerequisite = {
+			focus= bim_the_bigmt
+		}
+		x = 15
+		y = 5
+
+		completion_reward = {
+			add_ideas = old_institute
+		}
+	}
+focus = { 
+		id = bim_for_science
+		icon=GFX_goal_generic_common_energy_weapons_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_think_tanks
+		}
+		
+		x = 15
+		y = 6
+
+		completion_reward = {
+			add_ideas = bim_new_suits
+			
+	}
+	}
+focus = { 
+		id = bim_stop_mobius
+		icon=GFX_goal_generic_secret_weapon
+		cost = 8.6
+		prerequisite = {
+			focus = bim_for_science
+		}
+		
+		x = 15
+		y = 7
+
+		completion_reward = {
+		246={
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}}
+			add_ideas=nomobius
+			
+		}
+	}
+focus = { 
+		id = bim_the_cake_is_a_lie
+	icon=GFX_goal_tfv_generic_tech_sharing
+		cost = 8.6
+		prerequisite = {
+			focus = bim_stop_mobius
+		}
+		
+		x = 15
+		y = 8
+
+		completion_reward = {
+			add_ideas = new_techno
+		}
+	}
+# Signal Tree	
+ focus = { 
+		id = bim_signal
+		icon = GFX_goal_generic_data_focus
+		cost = 1
+		prerequisite = {
+			focus = bim_old_world_blues
+		}
+		x = 20
+		y = 5
+
+		completion_reward = {
+			add_political_power = 120
+			news_event = { id = nf_bigmt.5 days = 1 }
+		}
+	}
+focus = { 
+		id = bim_signal_to_ncr
+		icon = GFX_goal_NCR_Oldworldmilitary
+		cost = 4.3
+		prerequisite = {
+			focus = bim_signal
+		}
+		x = 17
+		y = 6
+
+		completion_reward = {
+			NCR = { country_event = { days = 1 id = nf_bigmt.6 } }
+			add_manpower = 600
+		}
+	}
+focus = { 
+		id = bim_ncr_weapons
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_signal_to_ncr
+		}
+		x = 17
+		y = 7
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bim_weapons
+				bonus = 0.4
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}	
+focus = { 
+		id = bim_signal_to_nv
+		icon = GFX_goal_bos_study_securitron_software
+		cost = 4.3
+		prerequisite = {
+			focus = bim_signal
+		}
+		x = 19
+		y = 6
+
+		completion_reward = {
+			VEG = { country_event = { days = 1 id = nf_bigmt.6 } }
+			add_manpower = 600
+		}
+	}
+focus = { 
+		id = bim_robots_nv
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_signal_to_nv
+		}
+		x = 19
+		y = 7
+
+		completion_reward = {
+			add_tech_bonus = {
+			name = bim_robotics
+			bonus = 0.4
+			uses = 2
+			category = robotics_tech
+			}
+		}
+	}	
+focus = { 
+		id = bim_signal_to_brotherhood
+		icon = GFX_goal_generic_BoS_diplomatic_focus
+		cost = 4.3
+		prerequisite = {
+			focus = bim_signal
+		}
+		x = 21
+		y = 6
+
+		completion_reward = {
+			BOS = { country_event = { days = 1 id = nf_bigmt.6 } }
+			add_manpower = 600
+		}
+	}
+focus = { 
+		id = bim_power_armour
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_signal_to_brotherhood
+		}
+		x = 21
+		y = 7
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bim_pa
+				bonus = 0.4
+				uses = 2
+				category = power_armor_tech
+			}
+		}
+	}
+
+##Visist(economy)	
+focus = { 
+		id = bim_awaken
+		icon =GFX_goal_generic_slums_focus
+		cost = 1
+		prerequisite = {
+			focus = bim_old_world_blues
+		}
+		x = 30
+		y = 5
+
+		completion_reward = {
+		246={
+		add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}}
+		}
+	}
+	#Ulysses branch
+focus = { 
+		id = bim_ulysses_visit
+		icon = GFX_goal_generic_national_unity
+		cost = 8.6
+		prerequisite = {
+			focus = bim_awaken
+		}
+		x = 28
+		y = 6
+
+		completion_reward = {
+		246={
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_what_makes_a_nation
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 8.6
+		prerequisite = {
+			focus = bim_ulysses_visit
+		}
+		x = 28
+		y = 7
+
+		completion_reward = {
+			
+        add_stability = 0.1
+		add_ideas = makes_nation
+		246={
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_what_breaks_a_nation
+		icon = GFX_goal_generic_war_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_what_makes_a_nation
+		}
+		x = 28
+		y = 8
+
+		completion_reward = {
+			
+add_war_support = 0.1
+		add_ideas = breaks_nation
+		246={
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}}
+		
+		}
+	}
+#Eljiah branch
+focus = { 
+		id = bim_elijah_visit
+		icon = GFX_goal_bos_elijah's_genius
+		cost = 8.6
+		prerequisite = {
+			focus = bim_awaken
+		}
+		x = 32
+		y = 6
+
+		completion_reward = {
+		246={
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}}
+		add_stability=0.10
+		}
+	}
+focus = { 
+		id = bim_hand_out_tech
+		icon = GFX_goal_generic_BoS_diplomatic_focus
+		cost = 8.6
+		prerequisite = {
+			focus = bim_elijah_visit
+		}
+		x = 32
+		y = 7
+
+		completion_reward = {
+		add_war_support=0.05
+		country_event = {
+							id = nf_bigmt.8
+						}
+		}
+	}
+focus = { 
+		id = bim_clash_at_yangtze
+		icon = GFX_goal_generic_secret_weapon
+		cost = 8.6
+		prerequisite = {
+			focus = bim_hand_out_tech
+		}
+		x = 32
+		y = 8
+
+		completion_reward = {
+		country_event = {
+							id = nf_bigmt.12
+						}
+		}
+	}
+##
+focus = { 
+		id = bim_a_new_perspective
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.6
+		prerequisite = {
+		
+			focus = bim_what_breaks_a_nation
+			focus = bim_clash_at_yangtze
+			
+		}
+		x = 30
+		y = 9
+
+		completion_reward = {
+		add_ideas=new_perspective
+		}
+	}
+	#x13
+focus = { 
+		id = bim_x13_research
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_crazy_integrate
+			
+		}
+		x = 2
+		y = 10
+
+		completion_reward = {
+		
+			197={
+			set_state_name= "X13"
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_x13_research_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_x13_research
+			
+		}
+		x = 2
+		y = 11
+
+		completion_reward = {
+		add_ideas=x13
+		
+		}
+	}
+	#x22
+focus = { 
+		id = bim_x22_botanic
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_delta_integrate
+			
+		}
+		x = 6
+		y = 10
+
+		completion_reward = {
+		
+			496={
+			set_state_name= "X22"
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_x22_botanic_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_x22_botanic
+			
+		}
+		x = 6
+		y = 11
+
+		completion_reward = {
+		add_ideas=x22
+		
+		}
+	}
+	#Y17
+focus = { 
+		id = bim_y17_medic
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_tar_integrate
+			
+		}
+		x = 4
+		y = 10
+
+		completion_reward = {
+		
+			138={
+			set_state_name= "Y17"
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_y17_medic_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_y17_medic
+			
+		}
+		x = 4
+		y = 11
+
+		completion_reward = {
+		add_ideas=y17
+		
+		}
+	}
+	#X42
+focus = { 
+		id = bim_x42_robo
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_cult_of_mobius
+			focus=bim_the_cake_is_a_lie
+			focus=bim_wasteland_of_subjects
+			focus=bim_utopia
+		}
+	
+		x = 12
+		y = 10
+
+		completion_reward = {
+		
+			246={
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_x42_robo_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_x42_robo
+			
+		}
+		x = 12
+		y = 11
+
+		completion_reward = {
+		set_technology={robo_scorpions = 1}
+		
+		}
+	}
+	#Z9
+focus = { 
+		id = bim_z9_breeding
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_a_new_perspective
+			
+		}
+	
+		x = 30
+		y = 10
+
+		completion_reward = {
+		
+			246={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_z9_breeding_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_z9_breeding
+			
+		}
+		x = 30
+		y = 11
+       
+		completion_reward = {
+		add_ideas=z9
+		set_technology={dog_tech_5 = 1}
+		
+		}
+	}
+#X17
+focus = { 
+		id = bim_x17_radar
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_ncr_weapons
+			
+		}
+		prerequisite = {
+		
+			focus=bim_robots_nv
+			
+		}
+		prerequisite = {
+		
+			focus=bim_power_armour
+			
+		}
+		
+	
+		x = 19
+		y = 10
+
+		completion_reward = {
+		
+			246={
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}}
+		}
+	}
+focus = { 
+		id = bim_x17_radar_boni
+		
+		cost = 8.6
+		prerequisite = {
+		
+			focus=bim_x17_radar
+			
+		}
+		x = 19
+		y = 11
+
+		completion_reward = {
+		set_technology={radio_detection = 1}
+		add_ideas=x17
+		
+		}
+	}	

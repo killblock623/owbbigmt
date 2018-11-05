@@ -1,0 +1,42 @@
+sub_units = {
+
+	trauma_suit = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 400
+		ai_priority = 2000
+		active = no
+		
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+               category_front_line
+		category_army
+            category_power_armor
+			
+		}
+
+
+		combat_width = 2
+
+		need = {
+			trauma_suit_equipment = 25
+                        infantry_equipment = 25
+		}
+		manpower = 25 # 500
+                maximum_speed = 6
+		max_organisation = 60
+		default_morale = 0.4
+		training_time = 150
+		max_strength = 35
+		weight = 0.7
+		supply_consumption = 0.25
+		
+
+		
+	}
+}

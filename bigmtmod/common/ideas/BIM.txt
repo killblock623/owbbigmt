@@ -1,0 +1,510 @@
+ideas = {
+	
+	country = {
+	
+		lobo_army = {
+			
+			picture = generic_infantry_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				conscription = 0.05
+                                army_infantry_attack_factor = -0.10
+                                experience_gain_army_factor = -0.1
+		                   }
+		            }
+               
+
+ old_dreams = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.03
+			}
+	           }
+	
+
+ old_world_god = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			
+				equipment_bonus = {
+				trauma_suit_equipment = {
+				breakthrough = 1
+					soft_attack = 4 
+					hard_attack = 4
+			}
+	           }
+			   }
+cult_of_mobius = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    army_morale_factor = 0.1
+				conscription=0.05
+				consumer_goods_factor = -0.05
+				army_attack_factor = 0.25
+			}
+	           }			   
+god_of_machines = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				ruler_drift = 0.10
+			}	
+	}
+people_institute = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				people_drift = 0.10
+			}	
+	}
+testing_institute = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				elites_drift = 0.10
+			}	
+	}
+old_institute = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				intellectuals_drift=0.10
+			}	
+			}	
+bim_utopia = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.15
+					production_speed_buildings_factor = 0.1
+						consumer_goods_factor = -0.05
+			}	
+			}
+bim_justification = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.5
+					war_support_factor = 0.10
+				}
+				
+			}	
+			
+			
+wasteland_of_subjects = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription = 0.05
+                army_infantry_attack_factor = -0.2
+					consumer_goods_factor = -0.1
+					army_attack_factor = 0.25
+				
+			}
+equipment_bonus = {
+				trauma_suit_equipment = {
+			
+					soft_attack = 2
+					hard_attack = 2
+			}
+	           }			
+			}					
+bim_good_suits = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+		
+				equipment_bonus = {
+				trauma_suit_equipment = {
+			
+					instant = yes
+					soft_attack = 3
+					defense = 1
+					
+				}
+				
+			}	
+			
+}
+bim_cheap_suits = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+		
+				equipment_bonus = {
+				trauma_suit_equipment = {
+			
+					instant = yes
+					
+					build_cost_ic = -0.35
+					
+				}
+				
+			}	
+			
+}			
+new_techno = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				army_attack_factor = 0.1
+				recon_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				research_time_factor = -0.03
+				consumer_goods_factor = -0.05
+				
+			}	
+			}			
+makes_nation = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+					global_building_slots_factor = 0.10
+				
+			}	
+	}
+breaks_nation = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.4
+					max_command_power = 100
+			}	
+	}	
+nf_1_science = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.03
+			}
+	           }
+nf_1_industry = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+	           }
+nf_1_military = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription=0.05
+			}
+	           }			   
+			
+			
+
+nf_1_arms = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+	           }
+
+nf_11_aggresive = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					army_leader_start_attack_level= 2
+						army_leader_start_level = 1
+			}
+	           }
+nf_11_defensive = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					army_leader_start_defense_level= 2
+					army_leader_start_level = 1
+			}
+	           }
+
+recovered_army = {
+			
+			picture = generic_infantry_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				conscription = 0.05
+                                
+                                experience_gain_army_factor = 0.1
+		                   }
+		            }
+					
+					
+bim_deal = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				encryption_factor = 0.25
+                                
+                 decryption_factor = 0.25
+		                   }
+		            }
+bim_new_suits = {
+			picture = generic_morale_bonus
+			allowed = {
+			}
+			removal_cost = -1
+		
+				equipment_bonus = {
+				trauma_suit_equipment = {
+			
+					instant = yes
+					soft_attack = 2
+					hardness = 0.4
+					
+				}
+				
+			}	
+			
+}
+nomobius = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				research_time_factor = -0.1
+		                   }
+		            }
+nf_12_expand = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					political_power_factor = 0.2
+						production_speed_bunker_factor = 0.25
+			}
+	           }
+new_perspective = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+					production_speed_buildings_factor = 0.1
+						industry_free_repair_factor = 0.2
+						production_speed_infrastructure_factor = 0.2
+		                   }
+		            }	
+x13 = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		equipment_bonus = {
+				Infantry = {
+					defense = 0.15
+					
+				} 
+			  }
+			modifier = {
+					research_time_factor=-0.07
+		                   }
+		            }
+x22 = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		equipment_bonus = {
+				Infantry = {
+					breakthrough = 0.1
+					
+				} 
+			  }
+			modifier = {
+					supply_consumption_factor = -0.15
+		                   }
+		            }
+y17 = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+		equipment_bonus = {
+				trauma_suit_equipment = {
+			
+					instant = yes
+					build_cost_ic=-0.15
+					
+				}
+				
+			}
+			
+			modifier = {
+					conscription_factor = 0.15
+		                   }
+						   
+		            }
+z9 = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		modifier = {
+						
+						army_speed_factor = 0.1
+		                   }
+						   equipment_bonus = {
+				dog_company = {
+					soft_attack = 0.1
+					
+				} 
+			  }
+
+						   
+		            }
+
+						   
+		            
+x17 = {
+			
+			picture = generic_morale_bonus
+			
+			allowed = {
+			}
+
+			removal_cost = -1
+		
+		    modifier = {
+						production_speed_radar_station_factor = 0.15
+						
+		                   }
+
+						   
+		            }
+					
+			   
+			   
+
+
+
+
+#end#			   
+}			
+}

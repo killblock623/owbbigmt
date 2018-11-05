@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+ # Trauma Suits
+ trauma_suit_equipment: "Y-17 Trauma Override Harness"
+ trauma_suit_equipment_short: "Trauma Suit"
+ trauma_suit_equipment_desc: ""
+ 
+  trauma_suit_equipment_1: "Y-17 Trauma Override Harness"
+ trauma_suit_equipment_short_1: "Trauma Suits"
+ trauma_suit_equipment_desc_1: ""
+ 
+ # Robo Scorpions
+ robo_scorpion_equipment: "X42 Giant Robo Scorpions"
+ robo_scorpion_equipment_short: "Robo Scorpions"
+ robo_scorpion_equipment_desc: ""
+ 
+  robo_scorpion_equipment_1: "X42 Giant Robo Scorpions"
+ robo_scorpion_equipment_short_1: "Robo Scorpions"
+ robo_scorpion_equipment_desc_1: ""
+ 

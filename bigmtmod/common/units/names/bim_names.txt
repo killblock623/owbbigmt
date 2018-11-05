@@ -1,0 +1,16 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+	trauma_suit = {
+		prefix = ""
+		generic = { "Trauma Suits" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = { BIM }
+		}
+robo_scorpion = {
+		prefix = ""
+		generic = { "Robo Scorpion" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = { BIM }
+		}
+}

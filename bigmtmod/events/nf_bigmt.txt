@@ -1,0 +1,270 @@
+add_namespace = nf_bigmt
+#Tt corrupt
+country_event = {
+	id = nf_bigmt.1
+	title = nf_bigmt.1.t 
+	desc = nf_bigmt.1.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = nf_bigmt.1.a
+	
+		
+		BIM = { country_event = { days = 1 id = nf_bigmt.2 } }
+		
+	}
+	option = {
+		name = nf_bigmt.1.b
+	
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		
+		}
+		parties=
+		{
+		people={popularity=60}
+		
+		}
+		
+		BIM = { country_event = { days = 1 id = nf_bigmt.3 } }
+		
+	}
+	}
+country_event = {
+	id = nf_bigmt.2
+	title = nf_bigmt.2.t 
+	desc = nf_bigmt.2.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = nf_bigmt.2.a
+	
+	
+		
+	}
+	option = {
+		name = nf_bigmt.2.b
+		
+		
+		set_politics = {
+			ruling_party = elites 
+			elections_allowed = no
+			
+				parties=
+		{
+		
+		elite={popularity=60}
+		
+		}
+		}
+		
+	}
+}	
+country_event = {
+	id = nf_bigmt.3
+	title = nf_bigmt.3.t 
+	desc = nf_bigmt.3.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.3.a
+		
+	}
+	option = {
+		name = nf_bigmt.3.b
+	
+		set_politics = {
+			ruling_party = ruler
+			elections_allowed = no
+				parties=
+		{
+		
+		ruler={popularity=60}
+		
+		}
+		}
+		
+	}
+}	
+country_event = {
+	id = nf_bigmt.10
+	title = nf_bigmt.10.t 
+	desc = nf_bigmt.10.d 
+	is_triggered_only = yes
+	
+	
+	
+	option = {
+		name = nf_bigmt.10.a
+	
+		set_technology={basic_laser_weaponry = 1}
+		add_equipment_to_stockpile = {
+			type = energy_equipment_1
+			amount = 1200
+			producer = BIM
+		}
+		
+	}
+	option = {
+		name = nf_bigmt.10.b
+	
+		set_technology={powered_weaponry = 1}
+		add_equipment_to_stockpile = {
+			type =  melee_equipment_3
+			amount = 1200
+			producer = BIM
+		}
+		
+	}
+}	
+#First Focus Event
+country_event = {
+	id = nf_bigmt.4
+	title = nf_bigmt.4.t 
+	desc = nf_bigmt.4.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.4.a
+	add_ideas = nf_1_science
+	}
+	option = {
+	name = nf_bigmt.4.b
+	add_ideas = nf_1_industry
+		
+	}
+	option = {
+	name = nf_bigmt.4.c
+	add_ideas = nf_1_military
+		
+	}
+	option = {
+	name = nf_bigmt.4.e
+	add_ideas = nf_1_arms
+	}
+	}
+# Signal Events
+news_event= {
+id = nf_bigmt.5
+is_triggered_only = yes
+title = nf_bigmt.5.t 
+desc = nf_bigmt.5.d 
+major=yes
+}
+
+news_event= {
+id= nf_bigmt.6
+title = nf_bigmt.6.t 
+desc = nf_bigmt.6.d 
+is_triggered_only = yes
+major=no
+immediate = {
+add_manpower = -600
+}
+}
+
+#Ulysses Event
+news_event= {
+id = nf_bigmt.7
+is_triggered_only = yes
+title = nf_bigmt.7.t 
+desc = nf_bigmt.7.d 
+major=yes
+}
+#Elyjahs Events
+
+country_event = {
+	id = nf_bigmt.8
+	title = nf_bigmt.8.t 
+	desc = nf_bigmt.8.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.8.a
+		BOS= { country_event = { days = 1 id = nf_bigmt.9 } }
+	}
+	
+		
+	}
+
+country_event = {
+	id = nf_bigmt.9
+	title = nf_bigmt.9.t 
+	desc = nf_bigmt.9.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.9.a
+		BOS=add_tech_bonus = {
+			name = bim_robotics
+			bonus = 0.6
+			uses = 1
+			category = robotics_tech
+			}
+		BIM=add_tech_bonus = {
+			name = bim_pa
+			bonus = 0.6
+			uses = 1
+			category = power_armor_tech
+			}	
+	}
+	option = {
+		name = nf_bigmt.9.b
+	
+		}
+		
+	}
+	
+country_event = {
+	id = nf_bigmt.11
+	title = nf_bigmt.11.t 
+	desc = nf_bigmt.11.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.11.a
+			add_ideas = nf_11_aggresive
+	}
+	option = {
+		name = nf_bigmt.11.b
+		add_ideas = nf_11_defensive
+		}
+		
+	}
+country_event = {
+	id = nf_bigmt.12
+	title = nf_bigmt.12.t 
+	desc = nf_bigmt.12.d 
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = nf_bigmt.12.a
+			create_field_marshal =
+			{name="Christine Royce"
+			portrait_path=""
+			traits={brilliant_strategist}
+			skill=4
+			
+			}
+
+	}
+	option = {
+		name = nf_bigmt.12.b
+		add_ideas = nf_12_expand
+		}
+		
+	}		
+	
+
+
+
+	
